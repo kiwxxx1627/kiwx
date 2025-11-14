@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #95A5A6, #151B54);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .biodata-container {
+            background-color: white;
+            box-shadow: 10px 10px 112px -24px rgba(0, 0, 0, 0.63);
+            -webkit-box-shadow: 10px 10px 112px -24px rgba(0, 0, 0, 0.63);
+            -moz-box-shadow: 10px 10px 112px -24px rgba(0, 0, 0, 0.63);
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .biodata-container img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid rgb(3, 0, 92);
+            margin-bottom: 20px;
+        }
+
+        .biodata-container h1 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* table */
+        table {
+            width: 95%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        td.first-child {
+            font-weight: bold;
+            color: #555;
+            width: 35%;
+        }
+
+        td:nth-child(2) {
+            width: 5%;
+        }
+
+        td:last-child {
+            color: #333;
+        }
+
+        /* Responsive */
+        @media (max-width: 500px) {
+            .biodata-container {
+                padding: 20px;
+            }
+
+            .table td {
+                display: block;
+                width: 110%;
+            }
+
+            .td:nth-child(2) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="biodata-container">
+        <img src="IMG-20240908-WA0026.jpg" alt="Foto Profile">
+        <h1>Profil Nama</h1>
+
+        <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <td><strong>Nama</strong></td>
+            <td>Rizky Maulana</td>
+        </tr>
+        <tr>
+            <td><strong>Tempat dan tanggal lahir</strong></td>
+            <td>Karawang, 27 Maret 2010</td>
+        </tr>
+        <tr>
+            <td><strong>Jenis kelamin</strong></td>
+            <td>Laki-laki</td>
+        </tr>
+        <tr>
+            <td><strong>Alamat</strong></td>
+            <td>Dusun Rumambe 2</td>
+        </tr>
+        <tr>
+            <td><strong>Agama</strong></td>
+            <td>Islam</td>
+        </tr>
+        <tr>
+            <td><strong>Hobi</strong></td>
+            <td>Keluar Rumah</td>
+        </tr>
+        <tr>
+            <td><strong>Cita-cita</strong></td>
+            <td>Pengusaha</td>
+        </tr>
+    </table>
+    </div>
+</body>
+
+</html>
